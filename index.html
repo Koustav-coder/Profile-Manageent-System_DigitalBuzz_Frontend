@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Management System</title>
+    <link rel="stylesheet" href="./sign_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>PROFILE MANAGEMENT SYSTEM</h1>
+    </header>
+    <div class="form">
+        <div class="tab-header">
+            <div class="active">Registration</div>
+            <div>Log In</div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-body active">
+                <div class="form-element">
+                    <input type="text" placeholder="First Name" name="uname" required>
+                </div>
+                <div class="form-element">
+                    <input type="text" placeholder="Middle Name" name="uname">
+                </div>
+                <div class="form-element">
+                    <input type="text" placeholder="Last Name" name="uname" required>
+                </div>
+                <div class="form-element">
+                    <input type="text" placeholder="Email" name="uname" required>
+                </div>
+                <div class="form-element">
+                    <input type="number" placeholder="Mobile number" name="number" required>
+                </div>
+                <div class="form-element">
+                    <input type="text" placeholder="Address" name="uname" required>
+                </div>
+                
+                <div class="form-element">
+                    <input type="password" placeholder="Password" name="uname" required>
+                </div>
+                <div class="form-element">
+                    <button onclick="signUpFunction()">Register</button>
+                </div>
+            </div>
+
+            <div class="tab-body">
+                <div class="form-element">
+                    <input type="text" placeholder="Email / Username(abc@xyz.com)" name="uname" required>
+                </div>
+                <div class="form-element">
+                    <input type="password" placeholder="Password"name="uname"  required>
+                </div>
+
+            
+                <div class="form-element">
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button onclick="window.location.href='./userDashboard.html'">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./signScript.js"></script>
+    <script>
+        function signUpFunction() {
+            alert("User Registered Successfully!!!");
+        }
+    </script>
+</body>
+
+</html>
